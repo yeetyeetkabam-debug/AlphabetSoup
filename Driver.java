@@ -30,7 +30,7 @@ public class Driver {
             
             else if (input.contains("removeSome")) {
                 mySoup.removeSome(Integer.parseInt(input.replace("removeSome ", "")));
-                System.out.println("new letters is " + mySoup.getLetters());
+                System.out.println("new letters iads " + mySoup.getLetters());
             } 
             
             else if (input.contains("removeWord")) {

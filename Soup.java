@@ -35,7 +35,7 @@ public class Soup {
 
     //Use Math.random() to get a random character from the letters string and return it.
     public char randomLetter(){
-        return letters.charAt((int)(Math.random()*letters.length() - 1));
+        return letters.charAt((int)(Math.random()*letters.length()));
     }
 
 
@@ -63,11 +63,17 @@ public class Soup {
 
     //should remove "num" letters from a random spot in the string letters. You may assume num never exceeds the length of the string.
     public void removeSome(int num){
-
+    int random = 0;
+    random = (int)(Math.random()*(letters.length()-num));
+   String subOne = letters.substring(0, random);
+   String subTwo = letters.substring(random + num);
+    System.out.println(subOne + subTwo);
+    letter = (subOne + subTwo);
     }
 
     //should remove the word "word" from the string letters. If the word is not found in letters then it does nothing.
     public void removeWord(String word){
-        
+        letters = letters.replaceAll(word, "");
+      System.out.println("new letters is " + letters.replaceAll(word, "" ));  
     }
 }
