@@ -1,3 +1,10 @@
+//Name: Benjamin Apter
+//Date: 09/29/26
+//Description: This program will help companies to produce soup that will only contain letters that spell out specific words in the hopes of subliminally influencing the customers.
+
+
+
+
 public class Soup {
     //these are instance variables
     private String letters;
